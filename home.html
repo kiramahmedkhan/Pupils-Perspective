@@ -1,0 +1,208 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pupils' Perspective</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+      background-color: #CBC3E3;
+    }
+    header {
+      background-color: #a87ad6;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1, header h4 {
+      margin: 0.25rem 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: #330066;
+      font-size: 1.25rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    main a {
+      color: black;
+      text-decoration: none;
+    }
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 2rem;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1rem;
+  margin-bottom: 0rem;
+  background: white;
+  border-radius: 4px;
+}
+.project-table th,
+.project-table td {
+  padding: 1rem;
+  vertical-align: middle; 
+  text-align: justify;
+  font-size: 111%;
+}
+
+.project-table thead th {
+  background-color: #7F00FF;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.project-table td:nth-child(3) {
+  vertical-align: middle; 
+  text-align: justify;    
+}
+
+@media (max-width: 600px) {
+  .project-table,
+  .project-table thead,
+  .project-table tbody,
+  .project-table tr,
+  .project-table th,
+  .project-table td {
+    display: block;
+    width: 100%;
+  }
+  .project-table thead {
+    display: none;
+  }
+  .project-table tr {
+    margin-bottom: .5rem;
+  }
+  .project-table td {
+    position: relative;
+    padding-left: 50%;
+  }
+  .project-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-weight: bold;
+  }
+  .project-table td:nth-child(3) {
+    text-align: justify;
+    padding-left: 1rem;
+  }
+    }
+    footer {
+      background-color: #000435;
+      color: white;
+      text-align: left;
+      padding: 1rem;
+    }
+    footer p {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.1rem;
+    }
+    footer strong {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.7rem;
+    }
+    footer img {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/499949593_122158318880569708_8847989788250019410_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHEQ5K0ln53APmx6m5n77crs4N8gHmERUezg3yAeYRFR7e-6Fffm-6emxfg05eKMFYekreDtgXRCupEBA6w2LsF&_nc_ohc=X6SckJP_y-gQ7kNvwHb-vVS&_nc_oc=AdkT-KtfYQWCEcj4bPeA89b-o4sC4UUSzgNB_vH_uJk5BNLDn8cfNExm88GevNrVxCk&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=D_Wv8LKfZpO1mT1lqSu2uA&oh=00_AfK1Ru1MLBjf9tiPmNGtHihp5c7-rtoASFh6lCCDHByeIg&oe=6836C585"; height="130px"; width="130px"><br>
+    <h1>PUPILS' PERSPECTIVE</h1>
+    <h4>SERVICE WITH JUSTICE</h4>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="board.html">Board of Directors</a>
+      <a href="join.html">Join Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Projects</h2>
+
+    <!-- Duplicate this block for each project -->
+    <a href="du2ndtimeprotest.html">
+    <div class="table-container">
+      <table class="project-table">
+        <thead>
+          <tr>
+            <th colspan="2">DU 2nd Time Admission Re-open</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Cover Photo">
+              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/499784969_122120421086821289_7263840862193975299_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEc0r0STgRFz7I8gB5Fyxy0ixuUiOCYWjOLG5SI4JhaM0rDD0JM1Q9yVqE7cld6y0AnYNBkDORumIVpZ1WTTbkH&_nc_ohc=B8waEZootLQQ7kNvwExyWbF&_nc_oc=AdmO5w5rB9VTZYa4VGAbpDem7ddRO9QPzmH2CnwDOaxKSLKkiWqyYLjhEuRIX6uCYYo&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=bstqxzPx8HeNE2qtLxO65A&oh=00_AfJwJaTVSlaIWYUx3EQv_kVEtqA2IbnVpCT-98rN1U9Rxg&oe=6835FA99" alt="Project Cover"; height="190px"; width="320"/>
+            </td>
+            <td data-label="Project Details">
+              <p>This project is to solve the 'DU 2nd Time Admission System Re-open' issue. As it is a legal claim of a certain group of students', so we decided work on this issue to re-open the 2nd time admission exam system in DU, closed by the authority of the University of Dhaka in October, 2014. Tap here to see details.</p>
+            </td>
+            <td>
+                <i>Progressing</i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </a>
+
+    <!-- Add more project tables here -->
+
+  </main>
+
+  <footer>
+    <p><strong>Reach us</strong></p><br>
+    <p><a href="https://www.facebook.com/PupilsPerspective"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook"></a>
+       <a href="https://www.facebook.com/PupilsPerspective"> Facebook</a></p>
+    <p><a href="https://maps.app.goo.gl/PPo1x6TJf3cnmT249"><img src="https://png.pngtree.com/png-vector/20230106/ourmid/pngtree-flat-red-location-sign-png-image_6553065.png" alt="Location"></a> 
+       <a href="https://maps.app.goo.gl/PPo1x6TJf3cnmT249">Visit our office</a></p>
+    <p><a href="mailto:pupilsperspective.org@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email"></a>
+        Mail for necessary information: <a href="mailto:pupilsperspective.org@gmail.com">pupilsperspective.org@gmail.com</a></p>
+    <p><a href="tel:+8801306264601"><img src="https://www.citypng.com/public/uploads/preview/hd-green-square-phone-icon-png-7017516950597582y4ltbrryl.png" alt="Phone"></a>
+        Call now: <a href="tel:+8801306264601">+8801884541714</a></p>
+  </footer>
+</body>
+</html>
+

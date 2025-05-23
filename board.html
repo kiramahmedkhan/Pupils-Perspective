@@ -1,0 +1,206 @@
+<!-- board.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board of Directors - Pupils' Perspective</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+      background-color: #CBC3E3;
+      font-size: 113%;
+    }
+    header {
+      background-color: #a87ad6;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1, header h4 {
+      margin: 0.25rem 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: #330066;
+      font-size: 1.25rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    main h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .table-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .board-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 1rem;
+      margin: 0 auto;
+    }
+    .board-table th,
+    .board-table td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5rem;
+    }
+    .board-table thead th {
+      font-weight: bold;
+      border-bottom: 2px solid #7F00FF;
+      padding-bottom: 0.75rem;
+    }
+    .board-table img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 0 auto;
+    }
+    @media (max-width: 600px) {
+      .board-table thead {
+        display: none;
+      }
+      .board-table,
+      .board-table tbody,
+      .board-table tr,
+      .board-table td {
+        display: block;
+        width: 100%;
+      }
+      .board-table tr {
+        margin-bottom: 1.5rem;
+      }
+      .board-table td {
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+      }
+      .board-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 1rem;
+        top: 0.5rem;
+        font-weight: bold;
+      }
+    }
+
+    footer {
+      background-color: #000435;
+      color: white;
+      text-align: left;
+      padding: 1rem;
+    }
+    footer p {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.2rem;
+    }
+    footer strong {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.7rem;
+    }
+    footer img {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/499949593_122158318880569708_8847989788250019410_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHEQ5K0ln53APmx6m5n77crs4N8gHmERUezg3yAeYRFR7e-6Fffm-6emxfg05eKMFYekreDtgXRCupEBA6w2LsF&_nc_ohc=X6SckJP_y-gQ7kNvwHb-vVS&_nc_oc=AdkT-KtfYQWCEcj4bPeA89b-o4sC4UUSzgNB_vH_uJk5BNLDn8cfNExm88GevNrVxCk&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=D_Wv8LKfZpO1mT1lqSu2uA&oh=00_AfK1Ru1MLBjf9tiPmNGtHihp5c7-rtoASFh6lCCDHByeIg&oe=6836C585"; height="130px"; width="130px"><br>
+    <h1>PUPILS' PERSPECTIVE</h1>
+    <h4>SERVICE WITH JUSTICE</h4>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="board.html">Board of Directors</a>
+      <a href="join.html">Join Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="table-container">
+      <table class="board-table">
+        <thead>
+          <tr>
+            <th>President</th>
+            <th>Vice President</th>
+            <th>HRO & IT Supporter</th>
+            <th>Editor & IT Supporter</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="President">
+              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-1/488084743_1417941512703890_2390954522007204251_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeGQgioWe61aH3RgYtkmB_sYXkZXULsNw7FeRldQuw3DsTFT_OlE9TrAasqSklLnvykSKSKMEpbID09BaykY7h3s&_nc_ohc=0anYORYk414Q7kNvwGV8an8&_nc_oc=AdlO7B2Vwv_GekgVBcgsEoRt3dja5VPaQ2FFYw8lMUJEouyBHjoM_fRUm8A74LSRF5s&_nc_zt=24&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=1CmIXdiLTdU9YtKHAbGK2w&oh=00_AfIWoDifInh-DzFsbGF0WzhlW8XV33K3TVWVmxx5223GQQ&oe=68355E6B" alt="Maisha Maha Sneha">
+            </td>
+            <td data-label="Vice President">
+              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/489536718_1049875433695620_4064389144201403854_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHwtAQZJHeU851I6tv0YjnkcOWiclM58_tw5aJyUznz-3WVuV3y06RWiaSh2BSaRjbz9-VcMngcabIaLYnod2VE&_nc_ohc=aCHkuKi_CGgQ7kNvwHf7hHX&_nc_oc=AdkoogyUApcY81at1wh5OOYQ135TIdN_obQlhRGJ7NCOHwC4UX2MAB7mUHpzUjOrsgQ&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=YVgI0nSPk_IbfwaAi3Lx0A&oh=00_AfKEwx1JGKzhr9M7WiTPho0zTLRTFvm72nGnmY59Y8FiBg&oe=6835860D" alt="Gazi Sadiya Islam Munia"; height="200px"; width="200px">
+            </td>
+            <td data-label="IT Supporter">
+              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-1/483878818_2057565518043857_3035604708767277915_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeEmSFw_CC6_XhqtVnhlurhZ6zSS5oHJ3IHrNJLmgcncgc7YULG18eahWRhuYOAVS6he2GAqSe3OdgBYCNF6hap2&_nc_ohc=MhevTrocUb4Q7kNvwHPuHuO&_nc_oc=Adlen7dtBwbxyoAEkOEI1mPHaybwrAMMP_IRl0iJR2cycwtrJbf4aybeZ6qw9Dcbgaw&_nc_zt=24&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=BgVoMmjSx4SAHx3co3_hrA&oh=00_AfLu7sFhOPN_uoeoNtH-4Q4GNf974d3eio2l8MBLZ2Pcng&oe=68355E4C" alt="Fozle Rabbi">
+            </td>
+            <td data-label="Editor">
+              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-1/499205612_122132035010707841_3846346001235206791_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeH9Ow7uyTtxozUuKVZ774iduX1ZxrUDLb-5fVnGtQMtv7G9Mks85w5F-tbvo_TZV4zQn2QRrPI24WkROeDAPPay&_nc_ohc=sXEZsyoKHeIQ7kNvwECAagx&_nc_oc=AdnttQV-Xo34lhNZCujYaZLl96DbidBsKAlv7rr2SlfN4SLCh8BffmzJyYwtM6wpRbU&_nc_zt=24&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=IiVlUC_Ljl_KMLq3gmpmyA&oh=00_AfLYh6-nOP46-EUMr-Shn4gOKJ5CrSyIJuvXSh9B0o2v8g&oe=68360444" alt="Kiram Ahmed Khan"; height="200px"; width="200px">
+            </td>
+            <td data-label="">
+              <!-- Future member -->
+              <img src="" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td data-label="President">Maisha Maha Sneha</td>
+            <td data-label="Vice President">Gazi Sadiya Islam Munia</td>
+            <td data-label="IT Supporter">Fozle Rabbi</td>
+            <td data-label="Editor">Kiram Ahmed Khan</td>
+            <td data-label="">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>Reach us</strong></p><br>
+    <p><a href="https://www.facebook.com/PupilsPerspective"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook"></a>
+       <a href="https://www.facebook.com/PupilsPerspective"> Facebook</a></p>
+    <p><a href="https://maps.app.goo.gl/PPo1x6TJf3cnmT249"><img src="https://png.pngtree.com/png-vector/20230106/ourmid/pngtree-flat-red-location-sign-png-image_6553065.png" alt="Location"></a> 
+       <a href="https://maps.app.goo.gl/PPo1x6TJf3cnmT249">Visit our office</a></p>
+    <p><a href="mailto:pupilsperspective.org@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email"></a>
+        Mail for necessary information: <a href="mailto:pupilsperspective.org@gmail.com">pupilsperspective.org@gmail.com</a></p>
+    <p><a href="tel:+8801306264601"><img src="https://www.citypng.com/public/uploads/preview/hd-green-square-phone-icon-png-7017516950597582y4ltbrryl.png" alt="Phone"></a>
+        Call now: <a href="tel:+8801306264601">+8801884541714</a></p>
+  </footer>
+</body>
+</html>
+
