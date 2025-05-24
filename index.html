@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pupils' Perspective</title>
   <style>
+    * {
+  box-sizing: border-box;
+    }
     body {
       margin: 0;
-      height: 100vh;
-      background-color: #422261; 
+      background-color: #422261; /* Deep purple */
+      font-family: 'Times New Roman', Times, serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Times New Roman', Times, serif;
+      min-height: 100vh;
+      padding: 20px;
     }
 
     .container {
-      background-color: #CBC3E3; 
-      padding: 40px;
+      background-color: #cbc3e3; /* Light purple */
+      padding: 30px 20px;
       border-radius: 20px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       text-align: center;
-      width: 400px;
+      max-width: 200%;
+      width: 200%;
+      max-width: 400px;
     }
 
-    .logo-placeholder {
+    .logo-placeholder img {
       width: 130px;
       height: 130px;
-      margin: 0 auto 20px;;
       border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      color: #555;
+      object-fit: cover;
+      margin-bottom: 20px;
     }
 
     .org-name {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: bold;
       margin: 10px 0 5px;
-      color: #4B0082; 
+      color: #4b0082; /* Indigo */
     }
 
     .motto {
       font-size: 16px;
-      font-style: none;
       color: black;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .enter-button {
-      padding: 15px 40px;
-      font-size: 20px;
-      background-color: #1a1065;
+      padding: 12px 30px;
+      font-size: 18px;
+      background-color: #1a1065; /* Dark violet */
       color: white;
       border: none;
       border-radius: 10px;
@@ -62,14 +64,34 @@
     }
 
     .enter-button:hover {
-      background-color: #32CD32;
+      background-color: #32cd32; /* Green */
+    }
+
+    @media (max-width: 400px) {
+      .org-name {
+        font-size: 20px;
+      }
+
+      .motto {
+        font-size: 14px;
+      }
+
+      .enter-button {
+        font-size: 16px;
+        padding: 10px 25px;
+      }
+
+      .logo-placeholder img {
+        width: 110px;
+        height: 110px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="logo-placeholder">
-      <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/500398762_122158311962569708_921677574112721012_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHKTOukBHKxx2VG2bNFAyI_DDp153qmF58MOnXneqYXn7ALqnkRucAMLMxnYsXLbRBn9iFU1TlJF2JshC5_eFeQ&_nc_ohc=fxWao4VlU50Q7kNvwFtemYP&_nc_oc=AdkZCcr8O9RnAfgB5JMIzHqOYmvX1OSRUSOyWjwcvwdSxatJGjqGGGNTgii3gvxh9YA&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=5znWOanoArax4GdK2-D7yg&oh=00_AfJ39tiZhdKA0hWrTkuRsETXDlgoLT0bmjfHjOt_ToMgYQ&oe=68367FE1"; height="145px"; width="145px">
+      <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/500398762_122158311962569708_921677574112721012_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHKTOukBHKxx2VG2bNFAyI_DDp153qmF58MOnXneqYXn7ALqnkRucAMLMxnYsXLbRBn9iFU1TlJF2JshC5_eFeQ&_nc_ohc=fxWao4VlU50Q7kNvwFtemYP&_nc_oc=AdkZCcr8O9RnAfgB5JMIzHqOYmvX1OSRUSOyWjwcvwdSxatJGjqGGGNTgii3gvxh9YA&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=5znWOanoArax4GdK2-D7yg&oh=00_AfJ39tiZhdKA0hWrTkuRsETXDlgoLT0bmjfHjOt_ToMgYQ&oe=68367FE1" alt="Logo" />
     </div>
     <div class="org-name">PUPILS' PERSPECTIVE</div>
     <div class="motto">SERVICE WITH JUSTICE</div>

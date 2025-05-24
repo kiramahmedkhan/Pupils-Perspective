@@ -15,11 +15,23 @@
     header {
       background-color: #a87ad6;
       color: white;
-      padding: 1rem 0;
+      padding: 1rem 0.5rem;
       text-align: center;
     }
-    header h1, header h4 {
-      margin: 0.25rem 0;
+    header img {
+      height: 100px;
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      margin: 0.5rem 0 0;
+      font-size: 1.5rem;
+    }
+
+    header h4 {
+      margin: 0.25rem 0 1rem;
+      font-size: 1rem;
     }
     nav {
       display: flex;
@@ -44,61 +56,47 @@
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
     }
-    .table-container {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .board-table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 1rem;
-      margin: 0 auto;
-    }
-    .board-table th,
-    .board-table td {
-      text-align: center;
-      vertical-align: middle;
-      padding: 0.5rem;
-    }
-    .board-table thead th {
-      font-weight: bold;
-      border-bottom: 2px solid #7F00FF;
-      padding-bottom: 0.75rem;
-    }
-    .board-table img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin: 0 auto;
-    }
-    @media (max-width: 600px) {
-      .board-table thead {
-        display: none;
-      }
-      .board-table,
-      .board-table tbody,
-      .board-table tr,
-      .board-table td {
-        display: block;
-        width: 100%;
-      }
-      .board-table tr {
-        margin-bottom: 1.5rem;
-      }
-      .board-table td {
-        text-align: left;
-        padding-left: 50%;
-        position: relative;
-      }
-      .board-table td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 1rem;
-        top: 0.5rem;
-        font-weight: bold;
-      }
-    }
+    .board-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 1.2rem;
+  color: #5a00a5;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .board-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
 
     footer {
       background-color: #000435;
@@ -148,47 +146,31 @@
   </header>
 
   <main>
-    <div class="table-container">
-      <table class="board-table">
-        <thead>
-          <tr>
-            <th>President</th>
-            <th>Vice President</th>
-            <th>HRO & IT Supporter</th>
-            <th>Editor & IT Supporter</th>
-            <th>&nbsp;</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td data-label="President">
-              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-1/488084743_1417941512703890_2390954522007204251_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeGQgioWe61aH3RgYtkmB_sYXkZXULsNw7FeRldQuw3DsTFT_OlE9TrAasqSklLnvykSKSKMEpbID09BaykY7h3s&_nc_ohc=0anYORYk414Q7kNvwGV8an8&_nc_oc=AdlO7B2Vwv_GekgVBcgsEoRt3dja5VPaQ2FFYw8lMUJEouyBHjoM_fRUm8A74LSRF5s&_nc_zt=24&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=1CmIXdiLTdU9YtKHAbGK2w&oh=00_AfIWoDifInh-DzFsbGF0WzhlW8XV33K3TVWVmxx5223GQQ&oe=68355E6B" alt="Maisha Maha Sneha">
-            </td>
-            <td data-label="Vice President">
-              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/489536718_1049875433695620_4064389144201403854_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHwtAQZJHeU851I6tv0YjnkcOWiclM58_tw5aJyUznz-3WVuV3y06RWiaSh2BSaRjbz9-VcMngcabIaLYnod2VE&_nc_ohc=aCHkuKi_CGgQ7kNvwHf7hHX&_nc_oc=AdkoogyUApcY81at1wh5OOYQ135TIdN_obQlhRGJ7NCOHwC4UX2MAB7mUHpzUjOrsgQ&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=YVgI0nSPk_IbfwaAi3Lx0A&oh=00_AfKEwx1JGKzhr9M7WiTPho0zTLRTFvm72nGnmY59Y8FiBg&oe=6835860D" alt="Gazi Sadiya Islam Munia"; height="200px"; width="200px">
-            </td>
-            <td data-label="IT Supporter">
-              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-1/483878818_2057565518043857_3035604708767277915_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeEmSFw_CC6_XhqtVnhlurhZ6zSS5oHJ3IHrNJLmgcncgc7YULG18eahWRhuYOAVS6he2GAqSe3OdgBYCNF6hap2&_nc_ohc=MhevTrocUb4Q7kNvwHPuHuO&_nc_oc=Adlen7dtBwbxyoAEkOEI1mPHaybwrAMMP_IRl0iJR2cycwtrJbf4aybeZ6qw9Dcbgaw&_nc_zt=24&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=BgVoMmjSx4SAHx3co3_hrA&oh=00_AfLu7sFhOPN_uoeoNtH-4Q4GNf974d3eio2l8MBLZ2Pcng&oe=68355E4C" alt="Fozle Rabbi">
-            </td>
-            <td data-label="Editor">
-              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-1/499205612_122132035010707841_3846346001235206791_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeH9Ow7uyTtxozUuKVZ774iduX1ZxrUDLb-5fVnGtQMtv7G9Mks85w5F-tbvo_TZV4zQn2QRrPI24WkROeDAPPay&_nc_ohc=sXEZsyoKHeIQ7kNvwECAagx&_nc_oc=AdnttQV-Xo34lhNZCujYaZLl96DbidBsKAlv7rr2SlfN4SLCh8BffmzJyYwtM6wpRbU&_nc_zt=24&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=IiVlUC_Ljl_KMLq3gmpmyA&oh=00_AfLYh6-nOP46-EUMr-Shn4gOKJ5CrSyIJuvXSh9B0o2v8g&oe=68360444" alt="Kiram Ahmed Khan"; height="200px"; width="200px">
-            </td>
-            <td data-label="">
-              <!-- Future member -->
-              <img src="" alt="">
-            </td>
-          </tr>
-          <tr>
-            <td data-label="President">Maisha Maha Sneha</td>
-            <td data-label="Vice President">Gazi Sadiya Islam Munia</td>
-            <td data-label="IT Supporter">Fozle Rabbi</td>
-            <td data-label="Editor">Kiram Ahmed Khan</td>
-            <td data-label="">&nbsp;</td>
-          </tr>
-        </tbody>
-      </table>
+  <h2>Board of Directors</h2>
+  <div class="board-cards">
+    <div class="card">
+      <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-1/488084743_1417941512703890_2390954522007204251_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeGQgioWe61aH3RgYtkmB_sYXkZXULsNw7FeRldQuw3DsTFT_OlE9TrAasqSklLnvykSKSKMEpbID09BaykY7h3s&_nc_ohc=O8B8-2CskdUQ7kNvwGror7j&_nc_oc=AdlxVYewK2ZREyIO97P5AAuNOpvLgr7G2VhEmlmHb9T27BcW3HZ-cHBujWfMPctikXA&_nc_zt=24&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=2ZqO29vhhmMQTWbh3ZvdfA&oh=00_AfKsvHq_S3qQvlEZPqwJ3gavRkaFqUM6YQFgkzRuasu0OQ&oe=6837206B" alt="Maisha Maha Sneha" />
+      <h3>President</h3>
+      <p>Maisha Maha Sneha</p>
     </div>
-  </main>
+    <div class="card">
+      <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/489536718_1049875433695620_4064389144201403854_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHwtAQZJHeU851I6tv0YjnkcOWiclM58_tw5aJyUznz-3WVuV3y06RWiaSh2BSaRjbz9-VcMngcabIaLYnod2VE&_nc_ohc=Iwj2liVQD8UQ7kNvwFVtm-R&_nc_oc=AdmLLWvaknSRodYK45mUq0_y8XYcwPf10zNf2T1wN57DC4c6w94pK_lxiGV87KAd4Lg&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=7azWQTuvmPSJc5SK8HUx2Q&oh=00_AfIMVGOmDWNyPsIFyeZy7Wk1KLAGuPCXSH3QfW_BDmOkFg&oe=6837480D" alt="Gazi Sadiya Islam Munia" />
+      <h3>Vice President</h3>
+      <p>Gazi Sadiya Islam Munia</p>
+    </div>
+    <div class="card">
+      <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/483878818_2057565518043857_3035604708767277915_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEmSFw_CC6_XhqtVnhlurhZ6zSS5oHJ3IHrNJLmgcncgc7YULG18eahWRhuYOAVS6he2GAqSe3OdgBYCNF6hap2&_nc_ohc=DZV21O2-qlAQ7kNvwFTABr5&_nc_oc=Adnls00xlXw6Lsjr4X49wo8-jyhk-GT2uwqoeQMBq5E8jmFVVe2aocGzz1wCZRrfdlI&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=AIZdjUF7V70IehErSMr4yA&oh=00_AfIXfyGCi83pCT7ZYPIfn-5QgJqMmI35n0VC3DOcxCe5xw&oe=68372ACA" alt="Fozle Rabbi" />
+      <h3>HRO & IT Manager</h3>
+      <p>Fozle Rabbi</p>
+    </div>
+    <div class="card">
+      <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/499205612_122132035010707841_3846346001235206791_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeH9Ow7uyTtxozUuKVZ774iduX1ZxrUDLb-5fVnGtQMtv7G9Mks85w5F-tbvo_TZV4zQn2QRrPI24WkROeDAPPay&_nc_ohc=sXEZsyoKHeIQ7kNvwE_D0Sr&_nc_oc=AdnwOnIrarYuPG3Gac5RlKInOkdBGoHEU5VxGd_F_6EEFZ08isLFUa3ranxvrpCDqyw&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=mP5LCB4b617jFPM32cMMQA&oh=00_AfKX_Au3HJSZIwL7Fi86sGNYPL0vz8ddTiE30d0dMlTMWw&oe=68374727" alt="Kiram Ahmed Khan" />
+      <h3>Editor & IT Manager</h3>
+      <p>Kiram Ahmed Khan</p>
+    </div>
+  </div>
+</main>
+
 
   <footer>
     <p><strong>Reach us</strong></p><br>

@@ -1,9 +1,9 @@
-<!-- du2ndtimeprotest.html-->
+<!-- du2ndtimeprotest.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DU 2nd Time Protest Updates</title>
   <style>
     * {
@@ -17,10 +17,10 @@
     header {
       background-color: #a87ad6;
       color: white;
+      padding: 1rem 0.5rem;
       text-align: center;
-      padding: 1rem 0;
-      line-height: 1.2;
     }
+  
     nav {
       display: flex;
       justify-content: center;
@@ -49,77 +49,61 @@
       margin: 2rem auto;
       aspect-ratio: 16 / 9;
     }
-    .video-wrapper video {
+    .video-wrapper iframe {
       width: 100%;
       height: 100%;
       border: none;
-      outline: none;
-      display: block;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
     main {
       padding: 2rem;
       font-size: 125%;
-      text-align: justify;
-    }
-    .table-container {
-      overflow-x: auto;
-    }
-    .info-table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 1rem 0.5rem;
-      margin: 2rem 0;
-    }
-    .info-table thead th {
-      font-weight: bold;
-      border-bottom: 2px solid #7F00FF;
-      padding-bottom: 0.5rem;
-    }
-    .info-table td,
-    .info-table th {
-      vertical-align: top;
       text-align: left;
-      padding: 0.5rem;
     }
-    .info-table img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .info-table ul {
-      list-style-type: disc;;
-      padding: 0;
-      margin: 0;
-    }
-    .info-table ul li {
-      margin-bottom: 0.5rem;
-    }
-    @media (max-width: 600px) {
-      .info-table thead {
-        display: none;
-      }
-      .info-table, .info-table tbody, .info-table tr, .info-table td {
-        display: block;
-        width: 100%;
-      }
-      .info-table tr {
-        margin-bottom: 1.5rem;
-      }
-      .info-table td {
-        position: relative;
-        padding-left: 50%;
-      }
-      .info-table td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 1rem;
-        top: 0.5rem;
-        font-weight: bold;
-      }
-    }
+    .responsive-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.info-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  padding: 1rem;
+  max-width: 350px;
+  flex: 1 1 300px;
+}
+
+.info-card h3 {
+  color: #330066;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.info-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info-card ul {
+  padding-left: 1rem;
+}
+
+.info-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .responsive-info {
+    flex-direction: row;
+  }
+}
+
     footer {
       background-color: #000435;
       color: white;
@@ -133,15 +117,12 @@
       gap: 0.5rem;
       font-size: 1.1rem;
     }
-    footer strong{
-         margin: 0.5rem 0;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+    footer strong {
       font-size: 1.7rem;
+      display: block;
+      margin-bottom: 0.5rem;
     }
     footer img {
-      display: inline-block;
       width: 20px;
       height: 20px;
     }
@@ -156,14 +137,16 @@
 </head>
 <body>
   <header>
-    <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/490347896_122111628242821289_5868793191670442401_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeEGveiKXV3RJHLU4wpuBVsPsYKC89Hb-rmxgoLz0dv6uSw8pyhb-wnus98wA0aaA7NbDJzhLYD0vY-LPKatup1Z&_nc_ohc=VERPBoUja4YQ7kNvwHyYiTM&_nc_oc=Admn4YDin6sR2hdLNmSkRUpXN-y6-mvNzh15dzg7Z77-mhbxTA-ZVx_Xl0O_dj3XmD8&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=pdItnCUQwv2K4vaaRDVL-Q&oh=00_AfIkQ54hhpSQjZuNpaRy4hB_mib9N7QIAFp6Zkk1TVhQyA&oe=6836AE02" alt="cover photo" width="1000" height="330">
     <nav>
       <a href="home.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="board.html">Board of Directors</a>
       <a href="join.html">Join Us</a>
     </nav>
-  </header>
+    <br>
+    <h1>Dhaka University 2nd Time Admission Re-open Protest</h1>
+    <h3><i>leading by-</i> PUPILS' PERSPECTIVE</h3>
+    </header>
 
   <main>
     <div class="alert-marquee">
@@ -171,52 +154,43 @@
     </div>
 
     <div class="video-wrapper">
-      <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPupilsPerspective%2Fvideos%2F2175841499527625%2F&show_text=false&width=560&t=0" width="760" height="514" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+      <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPupilsPerspective%2Fvideos%2F2175841499527625%2F&show_text=false&width=560&t=0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     </div>
 
-    <div class="table-container">
-      <table class="info-table">
-        <thead>
-          <tr>
-            <th>Logics behind this claim:</th>
-            <th>A simple research:</th>
-            <th>Find all important links here:</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/494051384_122114910572821289_900436027499532168_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHwcdZjnVV8qTRyZd2hLbYgL23QzRs3bPEvbdDNGzds8bpi0U7tXvIks2SQNc6eY3FoP_hS0VFeaXf7k_I08ZfT&_nc_ohc=T739EVZnueoQ7kNvwEepuTH&_nc_oc=Adnn4_3X6X47GDS4s5LKXIovyjEAu00CeLedxY8NqfVRjxiMTvXgGzWyrc5baECnnNU&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=mhzJEB1ppoZSvIguGaU_UA&oh=00_AfJkFw1G6VwGijX7rGbI2wqVuPJglhWQUkDZa5fvgYLtIQ&oe=68362B63" alt="Logic behind claim"; height="300px"; width="300px">
-            </td>
-            <td>
-              <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/499774531_122119731908821289_3487294088494837202_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGuL1MaFlehd9hSP-3yeWDFp0dJR30UBbynR0lHfRQFvNuWK8G65aFfKfhFCfAf8E6699z0An3lAMg-ScmFOLmg&_nc_ohc=YI3dCdcKObAQ7kNvwFFWpvh&_nc_oc=Adk8MdWlGKn_nsttqQe3j6Qsv7Y4fG3wJQe6cESua9TI4mamQxiwvhigKYBjyi1RK7s&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=nVBpduj1g5fI1PbL-6S4Kw&oh=00_AfLijaJ9OT8gXxRqAVt8dgV9qXkwyVMi8aMXKVhS8hSCcw&oe=68362B73" alt="Indian agenda against Bangladeshi Muslims"; height="300px"; width="300px">
-            </td>
-            <td>
-              <ul>
-                <li>Sign the <a href="https://shorturl.at/G5xj1">Petition Agreement Form</a> now and convince others to do so.</li>
-                <li>Reach us through our <a href="https://www.facebook.com/share/15F3fmtipU/">Facebook page</a>.</li>
-                <li>Join <a href="https://www.facebook.com/groups/627305596768907/">DU 2nd Time Wanted Facebook Group</a>.</li>
-                <li><a href="https://whatsapp.com/channel/0029Vb63eOIFCCoMwWfDYy2h">WhatsApp Channel</a></li>
-                <li>Join weekly community meeting through our <a href="https://chat.whatsapp.com/CkKfxYXYaNABmiPfd2Fq6J">WhatsApp Community</a> and share your ideas.</li>
-                <li>Find our admins at <a href="https://m.me/j/AbbyZtS-AOWpf466/">Messenger Group Chat</a>.</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <div class="responsive-info">
+  <div class="info-card">
+    <h3>Logics behind this claim:</h3>
+    <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/494051384_122114910572821289_900436027499532168_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHwcdZjnVV8qTRyZd2hLbYgL23QzRs3bPEvbdDNGzds8bpi0U7tXvIks2SQNc6eY3FoP_hS0VFeaXf7k_I08ZfT&_nc_ohc=T739EVZnueoQ7kNvwEepuTH&_nc_oc=Adnn4_3X6X47GDS4s5LKXIovyjEAu00CeLedxY8NqfVRjxiMTvXgGzWyrc5baECnnNU&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=Q5NvQFguIpFLv96gTsBEpQ&oh=00_AfKdI7mjeShR4tUOhgozWPbN3YenvzrW3nGCD6mmQUf4Lg&oe=68369BE3" alt="Logic behind claim">
+  </div>
+  <div class="info-card">
+    <h3>A simple research:</h3>
+    <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/499774531_122119731908821289_3487294088494837202_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGuL1MaFlehd9hSP-3yeWDFp0dJR30UBbynR0lHfRQFvNuWK8G65aFfKfhFCfAf8E6699z0An3lAMg-ScmFOLmg&_nc_ohc=YI3dCdcKObAQ7kNvwFFWpvh&_nc_oc=Adk8MdWlGKn_nsttqQe3j6Qsv7Y4fG3wJQe6cESua9TI4mamQxiwvhigKYBjyi1RK7s&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=VfelNk0Sa18gE3hPj42ZzA&oh=00_AfKnlg-i4LO5hHzJwaowFiAKjqhTCxPavpQHEAfESbQYyg&oe=68369BF3" alt="Research image">
+  </div>
+  <div class="info-card">
+    <h3>Find all important links here:</h3>
+    <ul>
+      <li><a href="https://shorturl.at/G5xj1">Petition Agreement Form</a></li>
+      <li><a href="https://www.facebook.com/share/15F3fmtipU/">Facebook page</a></li>
+      <li><a href="https://www.facebook.com/groups/627305596768907/">DU 2nd Time Group</a></li>
+      <li><a href="https://whatsapp.com/channel/0029Vb63eOIFCCoMwWfDYy2h">WhatsApp Channel</a></li>
+      <li><a href="https://chat.whatsapp.com/CkKfxYXYaNABmiPfd2Fq6J">Weekly Community</a></li>
+      <li><a href="https://m.me/j/AbbyZtS-AOWpf466/">Messenger Group Chat</a></li>
+    </ul>
+  </div>
+</div>
+
   </main>
 
   <footer>
-    <p><strong>Reach us</strong></p><br>
+    <p><strong>Reach us</strong></p>
     <p><a href="https://www.facebook.com/PupilsPerspective"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook"></a>
-       <a href="https://www.facebook.com/PupilsPerspective"> Facebook</a></p>
-    <p><a href="https://maps.app.goo.gl/PPo1x6TJf3cnmT249"><img src="https://png.pngtree.com/png-vector/20230106/ourmid/pngtree-flat-red-location-sign-png-image_6553065.png" alt="Location"></a> 
+       <a href="https://www.facebook.com/PupilsPerspective">Facebook</a></p>
+    <p><a href="https://maps.app.goo.gl/PPo1x6TJf3cnmT249"><img src="https://png.pngtree.com/png-vector/20230106/ourmid/pngtree-flat-red-location-sign-png-image_6553065.png" alt="Location"></a>
        <a href="https://maps.app.goo.gl/PPo1x6TJf3cnmT249">Visit our office</a></p>
     <p><a href="mailto:pupilsperspective.org@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email"></a>
-        Mail for necessary information: <a href="mailto:pupilsperspective.org@gmail.com">pupilsperspective.org@gmail.com</a></p>
+        Mail us at: <a href="mailto:pupilsperspective.org@gmail.com">pupilsperspective.org@gmail.com</a></p>
     <p><a href="tel:+8801306264601"><img src="https://www.citypng.com/public/uploads/preview/hd-green-square-phone-icon-png-7017516950597582y4ltbrryl.png" alt="Phone"></a>
-        Call now: <a href="tel:+8801306264601">+8801884541714</a></p>
+        Call now: <a href="tel:+8801884541714">+8801884541714</a></p>
   </footer>
 </body>
 </html>
