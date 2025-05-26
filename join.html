@@ -298,3 +298,289 @@
   </script>
 </body>
 </html>
+<!-- join.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join - Pupils' Perspective</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+      background-color: #cbc3e3;
+    }
+
+    header {
+      background-color: #a87ad6;
+      color: white;
+      padding: 1rem 0.5rem;
+      text-align: center;
+    }
+
+    header img {
+      height: 100px;
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      margin: 0.5rem 0 0;
+      font-size: 1.5rem;
+    }
+
+    header h4 {
+      margin: 0.25rem 0 1rem;
+      font-size: 1rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #330066;
+      font-size: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+    }
+
+    main p {
+      font-size: 1.1rem;
+    }
+
+    form {
+      display: grid;
+      grid-gap: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .checkbox-group,
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .submit-btn {
+      background-color: green;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #d8b4f2;
+    }
+
+    footer {
+      background-color: #000435;
+      color: white;
+      text-align: left;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    footer strong {
+      font-size: 1.3rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    footer p {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0.5rem 0;
+    }
+
+    footer img {
+      width: 20px;
+      height: 20px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.25rem;
+      }
+
+      header h4 {
+        font-size: 0.9rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      nav a {
+        font-size: 1rem;
+      }
+
+      main {
+        margin: 1rem;
+      }
+
+      footer {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://scontent.fzyl2-2.fna.fbcdn.net/v/t39.30808-6/499949593_122158318880569708_8847989788250019410_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHEQ5K0ln53APmx6m5n77crs4N8gHmERUezg3yAeYRFR7e-6Fffm-6emxfg05eKMFYekreDtgXRCupEBA6w2LsF&_nc_ohc=X6SckJP_y-gQ7kNvwHb-vVS&_nc_oc=AdkT-KtfYQWCEcj4bPeA89b-o4sC4UUSzgNB_vH_uJk5BNLDn8cfNExm88GevNrVxCk&_nc_zt=23&_nc_ht=scontent.fzyl2-2.fna&_nc_gid=D_Wv8LKfZpO1mT1lqSu2uA&oh=00_AfK1Ru1MLBjf9tiPmNGtHihp5c7-rtoASFh6lCCDHByeIg&oe=6836C585"; height="130px"; width="130px"><br>
+    <h1>PUPILS' PERSPECTIVE</h1>
+    <h4>SERVICE WITH JUSTICE</h4>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="board.html">Board of Directors</a>
+      <a href="join.html">Join Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <p><b>Join us and spread the rhythm of justice...</b></p>
+    <form action="https://formspree.io/f/mgvozkke" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="father">Father's Name</label>
+      <input type="text" id="father" name="father" required />
+
+      <label for="mother">Mother's Name</label>
+      <input type="text" id="mother" name="mother" required />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="study">Current Study Level</label>
+      <select id="study" name="study" required>
+        <option value="">-- Select --</option>
+        <option>Class 6</option>
+        <option>Class 7</option>
+        <option>Class 8</option>
+        <option>Class 9</option>
+        <option>Class 10</option>
+        <option>Class 11</option>
+        <option>Class 12</option>
+        <option>Undergraduate - 1st Year</option>
+        <option>Undergraduate - 2nd Year</option>
+        <option>Undergraduate - 3rd Year</option>
+        <option>Undergraduate - 4th Year</option>
+        <option>Post Graduate</option>
+      </select>
+
+      <label for="institution">School/College/University Name</label>
+      <input type="text" id="institution" name="institution" required />
+
+      <label for="present">Present Address</label>
+      <textarea id="present" name="present" rows="2" required></textarea>
+
+      <label for="permanent">Permanent Address</label>
+      <textarea id="permanent" name="permanent" rows="2" required></textarea>
+
+      <label>Select Sections You Want to Apply For</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="sections" value="Page Manager" /> Page Manager</label>
+        <label><input type="checkbox" name="sections" value="Human Relation Officer" /> Human Relation Officer</label>
+        <label><input type="checkbox" name="sections" value="Call Service" /> Call Service</label>
+        <label><input type="checkbox" name="sections" value="Content Writer" /> Content Writer</label>
+        <label><input type="checkbox" name="sections" value="Video Content Maker" /> Video Content Maker</label>
+        <label><input type="checkbox" name="sections" value="Modeling for Promo Videos" /> Modeling for Promotional Videos</label>
+      </div>
+
+      <label>Previous Experience in Any Organization?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="experience" value="Yes" /> Yes</label>
+        <label><input type="radio" name="experience" value="No" checked /> No</label>
+      </div>
+
+      <div id="prev-org" class="hidden">
+        <label for="prevOrgName">Name of Previous Organization</label>
+        <input type="text" id="prevOrgName" name="prevOrgName" />
+      </div>
+
+      <label for="why">Why Do You Want to Join Us?</label>
+      <textarea id="why" name="why" rows="4" required></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p><strong>Reach us</strong></p>
+    <p><a href="https://www.facebook.com/PupilsPerspective"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook" /></a>
+      <a href="https://www.facebook.com/PupilsPerspective">Facebook</a></p>
+    <p><a href="https://maps.app.goo.gl/PPo1x6TJf3cnmT249"><img src="https://png.pngtree.com/png-vector/20230106/ourmid/pngtree-flat-red-location-sign-png-image_6553065.png" alt="Location" /></a>
+      <a href="https://maps.app.goo.gl/PPo1x6TJf3cnmT249">Visit our office</a></p>
+    <p><a href="mailto:pupilsperspective.org@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email" /></a>
+      Mail: <a href="mailto:pupilsperspective.org@gmail.com">pupilsperspective.org@gmail.com</a></p>
+    <p><a href="tel:+8801306264601"><img src="https://www.citypng.com/public/uploads/preview/hd-green-square-phone-icon-png-7017516950597582y4ltbrryl.png" alt="Phone" /></a>
+      Call now: <a href="tel:+8801884541714">+8801884541714</a></p>
+  </footer>
+
+  <script>
+    const radios = document.querySelectorAll('input[name="experience"]');
+    const prevOrg = document.getElementById('prev-org');
+    radios.forEach(r => {
+      r.addEventListener('change', () => {
+        prevOrg.classList.toggle('hidden', r.value !== 'Yes');
+      });
+    });
+  </script>
+</body>
+</html>
