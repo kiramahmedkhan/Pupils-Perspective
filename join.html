@@ -151,45 +151,38 @@
       text-decoration: underline;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
+  header h1 {
+    font-size: 1.25rem;
+  }
+
+  header h4 {
+    font-size: 0.9rem;
+  }
+
   nav {
     overflow-x: auto;
     white-space: nowrap;
+    justify-content: flex-start;
     padding: 0.5rem;
   }
 
   nav a {
     display: inline-block;
-    padding: 0.5rem 1rem;
-  }
-
-  header img {
-    width: 80px;
-    height: 80px;
-  }
-
-  h1 {
-    font-size: 1.3rem;
-  }
-
-  h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    white-space: nowrap;
   }
 
   main {
-    padding: 1rem 0.75rem;
+    margin: 1rem;
   }
 
-  main h2 {
-    font-size: 1.3rem;
-  }
-
-  footer p {
-    font-size: 0.95rem;
-    flex-direction: column;
-    align-items: flex-start;
+  footer {
+    font-size: 0.9rem;
   }
 }
+
 
   </style>
 </head>
